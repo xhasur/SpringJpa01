@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_2_0.xsd">
+
+	<named-query name="GET_AVES">
+		<query>SELECT a FROM Aves a</query>
+	</named-query>
+
+	<named-query name="DELETE_AVES_ID">
+		<query>DELETE   FROM Aves a where a.id=:id</query>
+	</named-query>
+
+
+	<named-query name="GET_ZONAS">
+		<query>SELECT a FROM TontZonas a</query>
+	</named-query>
+
+	<named-query name="GET_TONT_PAISES">
+		<query>SELECT a FROM TontPaises a</query>
+	</named-query>
+
+	<named-query name="GET_AVES_PAIS">
+		<query>SELECT a FROM TontAvesPais a</query>
+	</named-query>
+
+</entity-mappings>
