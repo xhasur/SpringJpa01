@@ -8,16 +8,13 @@
         <title>PROJECT CRUD</title>
     </head>
     <body>
-        <h1 align="center">TEST</h1>
+        <h1 align="center">OPERACIONES</h1>
         <table>
             <tr>
                 <th><a href="view.htm" >Listar</a></th>
             </tr>
             <tr>
                 <th><a href="create.htm" >Crear</a></th>
-            </tr>
-            <tr>
-                <th><a href="viewConsulta.htm" >Consulta</a></th>
             </tr>
         </table>
     </body>

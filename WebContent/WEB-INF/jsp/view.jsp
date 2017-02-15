@@ -5,27 +5,24 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>IAS PRUEBA</title>
 </head>
 <body>
-<h1 align="center">Aves</h1>
+<h1 align="center">Countries</h1>
 
 <p>${msg}</p>
 <form>
 <table>
   <THEAD>
     <TR>
-      <TH SCOPE=col ROWSPAN=2>Nombre Comun</TH>
-      <TH SCOPE=col ROWSPAN=2>Nombre Cientifico</TH>
+      <TH SCOPE=col ROWSPAN=2>Nombre</TH>
     </TR>
   </THEAD>
   <TBODY>
-<c:forEach items="${aves}" var="av" varStatus="status">
+<c:forEach items="${countries}" var="cou" varStatus="status">
 	
 	<tr>
-		<td>${av.dsnombre_comun} </td>
-		<td>${av.dsnombre_cientifico}</td>
-	    <td><a href="delete.htm?id=${av.id}">Borrar</a></td>
+		<td>${cou.countryName} </td>
+	    <td><a href="delete.htm?id=${cou.countryId}">Borrar</a></td>
 	</tr>
 </c:forEach>
   </TBODY>

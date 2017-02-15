@@ -3,12 +3,16 @@
 	xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_2_0.xsd">
 
-	<named-query name="GET_PERSONS">
-		<query>SELECT a FROM Persons a</query>
+	<named-query name="GET_COUNTRIES">
+		<query>SELECT a FROM Countries a</query>
 	</named-query>
 
-	<named-query name="DELETE_PERSONS_ID">
-		<query>DELETE   FROM Persons a where a.id=:id</query>
+	<named-query name="DELETE_COUNTRIES_ID">
+		<query>DELETE   FROM Countries a where a.countryId=:id</query>
+	</named-query>
+        
+        	<named-query name="SELECT_COUNTRIES_NAME">
+		<query>SELECT a FROM Countries a where a.countryName=:name</query>
 	</named-query>
 
 </entity-mappings>

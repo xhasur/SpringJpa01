@@ -4,6 +4,8 @@
     <mapping-file>META-INF/orm.xml</mapping-file>
     <!-- <provider> org.eclipse.persistence.jpa.PersistenceProvider </provider> -->
     <class>com.co.entidades.Persons</class>
+    <class>com.co.entidades.Countries</class>
+    <class>com.co.entidades.Regions</class>
     <properties>
       <!--<property name="eclipselink.jdbc.driver" value="oracle.jdbc.driver.OracleDriver" />-                      
 			<property name="eclipselink.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:XE" />
